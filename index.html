@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Ascari</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <h1>Red Ascari</h1>
+    <h2>¿Que estas pensando?</h2>
+    <button onclick="getData()">Ver Posteos</button>
+    <ul id="postList"></ul>
+
+    <h2>Postear</h2>
+    <form id="postForm" onsubmit="event.preventDefault(); postData()">
+        <label for="title">Titulo:</label>
+        <input type="text" id="postTitle" required>
+        <label for="postBody">Comentario</label>
+        <textarea type="text" id="postBody" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+    <ul id="postList"></ul>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
